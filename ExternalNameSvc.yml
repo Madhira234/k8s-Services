@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pay-service
+spec:
+  selector:
+    ENV: DEV-PAYMENT
+  type: ExternalName
+  ports:
+    - port: 80
+      protocol: TCP
+  ExternalName:  "www.raja.com"    
