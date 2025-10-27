@@ -1,0 +1,57 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: payment-app-1
+  labels:
+    ENV: DEV-PAYMENT
+spec:
+  containers:
+    - name: pay-image-1
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: payment-app-2
+  labels:
+    ENV: DEV-PAYMENT
+spec:
+  containers:
+    - name: pay-image-2
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: payment-app-3
+  labels:
+    ENV: DEV-PAYMENT
+spec:
+  containers:
+    - name: pay-image-3
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: payment-app-4
+  labels:
+    ENV: DEV-PAYMENT
+spec:
+  containers:
+    - name: pay-image-4
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP                    
