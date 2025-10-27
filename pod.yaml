@@ -1,0 +1,57 @@
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cluster-pod1
+  labels:
+    app: payment-app
+spec:
+  containers:
+    - name: app-image1
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cluster-pod2
+  labels:
+    app: payment-app
+spec:
+  containers:
+    - name: app-image2
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cluster-pod3
+  labels:
+    app: payment-app
+spec:
+  containers:
+    - name: app-image3
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cluster-pod4
+  labels:
+    app: payment-app
+spec:
+  containers:
+    - name: app-image4
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
